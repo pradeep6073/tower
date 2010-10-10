@@ -1,5 +1,7 @@
 - name: example of github with tower
   hosts: web
+  user: ansible
+  become: true
   tasks:
       - name: install vsftp
         yum:
