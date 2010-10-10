@@ -1,0 +1,7 @@
+- name: example of github with tower
+  hosts: web
+  tasks:
+      - name: install vsftp
+        yum:
+            name: vsftpd
+            state: installed
